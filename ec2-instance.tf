@@ -3,5 +3,5 @@ resource "aws_instance""myec2m"{
     instance_type = var.instance_type
     vpc_security_group_ids = [aws_security_group.vpc-ssh,aws_security_group.vpc-web]
     count = 2
-    tags = "Count-demo-${count.index}"
+    tags = "count-demo-${count.index}"
 }
