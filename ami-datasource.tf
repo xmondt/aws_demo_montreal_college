@@ -3,7 +3,7 @@
     owners = ["amazon"]
     filter{
         name="name"
-        values=["ami-06ca3ca175f37dd66*"]
+        values=["ami-0e9107ed11be76fde"]
     }
     filter{
         name="root-device-type"
