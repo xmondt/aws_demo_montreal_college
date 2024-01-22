@@ -5,5 +5,5 @@ resource "aws_instance""myec2m"{
     count = 2
     tags = {
         name="count-demo-${count.index}"
-}
+    }
 }
