@@ -5,6 +5,7 @@ module "vpc" {
 
 module "rds" {
   source = "terraform-aws-modules/rds/aws"
+  identifier = "my-rds-instance"
   # Include any necessary variables for the RDS module
 }
 
