@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-east-1"  # Set your desired AWS region
-}
-
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
   # Include any necessary variables for the VPC module
