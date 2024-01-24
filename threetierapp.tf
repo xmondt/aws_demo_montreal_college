@@ -4,11 +4,14 @@ module "vpc" {
 }
 
 module "rds" {
-  source = "terraform-aws-modules/rds/aws"
-  identifier = "my-rds-instance"
-  # Include any necessary variables for the RDS module
-}
+  source     = "terraform-aws-modules/rds/aws"
+  identifier = "my-rds-instance"  # Replace with your unique identifier
 
+  family                  = "mysql5.7"  # Example value, replace with the appropriate RDS family
+  engine_name             = "mysql"     # Example value, replace with the appropriate RDS engine name
+  major_engine_version    = "5.7"       # Example value, replace with the appropriate RDS engine version
+  # Include any other necessary variables for the RDS module
+}
 resource "aws_instance" "example" {
   ami           = "ami-0c55b159cbfafe1f0"  # Replace with your desired AMI
   instance_type = "t2.micro"  # Replace with your desired instance type
