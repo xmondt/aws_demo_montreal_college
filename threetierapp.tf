@@ -33,7 +33,7 @@ output "lb_dns_name" {
 variable "namespace" {
   description = "The project namespace to use for unique resource naming"
   type        = string
-  default=""mythreetierapplication"
+  default="mythreetierapplication"
 }
 
 variable "ssh_keypair" {
